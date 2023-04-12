@@ -1,0 +1,38 @@
+.higher-skill {
+    animation: skill-higher 4s linear infinite;
+}
+@keyframes skill-higher {
+    0% {
+        filter: saturate(50%); /* teñir la imagen en el canal blanco con un color al pasar el mouse */
+    }
+    50% {
+        filter: saturate(800%); /* teñir la imagen en el canal blanco con un color al pasar el mouse */
+    }
+    100% {
+        filter: saturate(50%); /* teñir la imagen en el canal blanco con un color al pasar el mouse */
+    }
+}
+.skills__javascript {
+    background-color: rgb(255, 249, 85);
+}
+.skills__java {
+    background-color: rgb(255, 195, 85);
+}
+.skills__html {
+    background-color: orangered;
+}
+.skills__css {
+    background-color: rgb(51, 51, 153);
+}
+.skills__csharp {
+    background-color: rgb(108, 60, 153);
+}
+.skills__unity {
+    background-color: rgb(42, 61, 61);
+}
+.skills__angular {
+    background-color: rgb(233, 30, 30);
+}
+.skills__react {
+    background-color: rgb(54, 170, 170);
+}

@@ -1,0 +1,36 @@
+{
+    "knowledges": [
+        {
+            "name": "Javascript",
+            "pts": 65
+        },
+        {
+            "name": "CSharp",
+            "pts": 60
+        },
+        {
+            "name": "Java",
+            "pts": 50
+        },
+        {
+            "name": "HTML",
+            "pts": 60
+        },
+        {
+            "name": "CSS",
+            "pts": 50
+        },
+        {
+            "name": "Unity",
+            "pts": 40
+        },
+        {
+            "name": "React",
+            "pts": 65
+        },
+        {
+            "name": "Angular",
+            "pts": 30
+        }
+    ]
+}

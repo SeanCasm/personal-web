@@ -1,0 +1,74 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import "./base/settings", "./base/base", "./components/contact";
+@import "./components/navbar", "./components/skills";
+
+.me-img {
+  max-height: 700px;
+  max-width: 100%;
+  box-shadow: 3px 3px $shadow-dark;
+}
+
+.bg-c {
+  background-color: $dark-primary;
+}
+
+.panel {
+  border: 2px dashed $dark-secondary;
+  box-shadow: 12px 12px $shadow-dark;
+}
+.side-info li {
+  display: flex;
+}
+.side-info p:first-child {
+  text-decoration: underline $light-primary 3px;
+}
+.side-info p:nth-child(2) {
+  margin-left: auto;
+}
+.side-info {
+}
+.d-sm-flex div {
+  margin: 6px;
+}
+.card-web {
+  border-left: 4px solid $light-primary;
+  border-right: 4px solid $light-primary;
+  border-top: 0;
+  border-bottom: 0;
+  padding: 6px 24px;
+  width: 300px;
+  margin: 10px;
+}
+.card-web img {
+  margin: auto;
+}
+.card-web p {
+  margin-top: 12px;
+}
+
+.btn-fixed {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1;
+}
+.btn-fixed img {
+  max-width: 64px;
+}
+.btn-fixed button:hover {
+  animation: button 1s infinite;
+}
+@keyframes button {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
