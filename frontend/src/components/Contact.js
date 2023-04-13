@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
-import { fetchContact } from "../helpers/fetchContact";
 import Recaptcha from "./Recaptcha";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { useSend } from "../hooks/useSend";
 
 const Contact = () => {
   const [send, setSend] = useState(false);
   const [recaptcha, setRecaptcha] = useState(false);
-
+  const { postMessage } = useSend();
   return (
     <>
       <div>
@@ -51,7 +51,7 @@ const Contact = () => {
           resetForm();
           setSend(true);
           delete values.rc;
-          fetchContact(values);
+          postMessage(values);
           setTimeout(() => {
             setSend(false);
           }, 3000);

@@ -24,8 +24,10 @@ const send = (req = request, res = response) => {
     (err, data) => {
       if (err) {
         console.log(err);
+        res.json(err);
       } else {
         console.log("Correo electrónico enviado: " + data.response);
+        res.json("Correo electrónico enviado: " + data.response);
       }
     }
   );
