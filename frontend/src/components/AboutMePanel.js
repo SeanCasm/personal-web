@@ -20,7 +20,7 @@ const AboutMePanel = () => {
           <div className="col-md">
             <p>
               Ingeniero Civil Informático de la Pontificia Universidad Católica
-              de Valparaíso
+              de Valparaíso.
               <br />
               <br />
               Durante mis estudios logré adquirir diversos conocimientos en
