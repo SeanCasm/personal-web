@@ -1,31 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import knowledges from "../data/knowledges-data.json";
 import SkillItem from "./SkillItem.js";
 const SkillContainer = () => {
-  const [data, setData] = useState([]);
-  useEffect(() => {
-    fetch("./bd/knowledges-data.json", {
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-    })
-      .then((response) => response.json())
-      .then((data) => setData(data.knowledges.sort((a, b) => b.pts - a.pts)))
-      .catch((error) => console.log(error));
-  }, []);
-  useEffect(() => {}, [data]);
   return (
     <section>
-      <div>
-        <h1>Habilidades</h1>
-      </div>
-      <div>
-        <h3>Programación</h3>
-      </div>
+      <h1>Conocimientos</h1>
       <div className="container">
         <ul className="row">
-          {data.map((skill) => {
-            return <SkillItem key={skill.name} {...skill} />;
+          {knowledges.data.map((k) => {
+            return <SkillItem key={k.name} {...k} />;
           })}
         </ul>
       </div>

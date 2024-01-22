@@ -1,8 +1,8 @@
 {
-    "knowledges": [
+    "data": [
         {
             "name": "Javascript",
-            "pts": 65
+            "pts": 60
         },
         {
             "name": "CSharp",
@@ -10,27 +10,27 @@
         },
         {
             "name": "Java",
-            "pts": 50
-        },
-        {
-            "name": "HTML",
-            "pts": 60
-        },
-        {
-            "name": "CSS",
-            "pts": 50
-        },
-        {
-            "name": "Unity",
             "pts": 40
         },
         {
+            "name": "HTML",
+            "pts": 55
+        },
+        {
+            "name": "CSS",
+            "pts": 45
+        },
+        {
+            "name": "Unity",
+            "pts": 50
+        },
+        {
             "name": "React",
-            "pts": 65
+            "pts": 55
         },
         {
             "name": "Angular",
-            "pts": 30
+            "pts": 15
         }
     ]
 }

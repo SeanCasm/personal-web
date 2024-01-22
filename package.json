@@ -1,13 +1,13 @@
 {
   "name": "personal-web",
-    "version": "1.1.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "build": "cd backend && npm install  && cd ../frontend && npm install && npm run build",
-        "start": "cd backend && node index.js",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": "Sebastian Cataldo",
-    "license": "ISC"
+  "version": "1.1.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd backend && npm install  && cd ../frontend && npm install && npm run build",
+    "start": "cd backend && node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sebastian Cataldo",
+  "license": "ISC"
 }
